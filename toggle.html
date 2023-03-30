@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dark {
+        background-color: rgb(50, 32, 103);
+        color: rgb(212, 212, 212);
+        }
+    </style>
     <script>
-        const changeDarkMode = (){
-            document.documentElement.classList.add("dark");
+        tailwind.config = {
+          theme: {
+            extend: {
+              textColor: {
+                primary: "var(color)"
+              },
+              backgroundColor: {
+                primary: "var(background-color)"
+              }
+            }
+            }
+          }
+        
+    </script>
+    <script>
+        function changeDarkMode(){
+            document.documentElement.classList.toggle("dark");
         }
     </script>
 </head>
@@ -17,7 +38,7 @@
     <main class="container text-center">
         <h1>DARK MODE</h1>
 
-        <button onclick="changeDarkMode()"></button>
+        <button onclick="changeDarkMode()">Día/Noche</button>
 
     </main>
     
