@@ -12,14 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-          tailwind.config = {},
-          tailwind.darkMode = {
-            theme: {
-                extend: {   
-                    darkmode: 'class'
-
-                }
-            }
+        tailwind.config = {
+          theme: {
+            extend: {},
+            },
+            darkMode: "class",
           }
         
     </script>
@@ -29,20 +26,20 @@
         }
     </script>
 </head>
-<body >
+<body class="dark:bg-slate-900 dark:text-white">
   <script>
     $(document).ready(function () {
       $('#example').DataTable();
     });
   </script>
-  <div class=" container-fluid">
-  <header class="dark:bg-black" >
-      <nav class="navbar bg-body-tertiary dark:bg-black">
-        <div class="container-fluid dark:bg-black">
+  <div class=" container-fluid dark:bg-slate-900 dark:text-white">
+  <header class="dark:bg-slate-900 dark:text-white" >
+      <nav class="navbar dark:bg-slate-900 dark:text-white">
+        <div class="container-fluid dark:bg-slate-900 dark:text-white">
           <div class="col-4">
           <a class="navbar-brand" href="#">
             <img src="img/estigia-logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Conquest
+            <p class="dark:bg-slate-900 dark:text-white">Conquest</p>
           </a>
         </div>
         <div class="col-4">
@@ -61,8 +58,8 @@
     </header>
   
       
-        <main >
-          <div class="container">
+        <main class="dark:bg-slate-900 dark:text-white">
+          <div class="container dark:bg-slate-900 dark:text-white">
             <div class="row">
               <div class="col-12">
                 <table id="example" class="stripe" style="width:100%">
@@ -549,8 +546,8 @@
 
           </div>
         </main>
-        <footer class="fixed-bottom">
-          <div class="container dark:bg-black">
+        <footer class="fixed-bottom dark:bg-slate-900">
+          <div class="container dark:bg-slate-900">
             <div class="row">
               <div class="col-6">
 
@@ -561,7 +558,7 @@
             </div>
             <div class="row">
               <div class="col-12 text-center" >
-               <p style="font-family:'Lato', sans-serif; color:#2b2b2b !important"> Derechos reservados 2023 </p>
+               <p style="font-family:'Lato', sans-serif; color:#ffffff !important"> Derechos reservados 2023 </p>
               </div>
             </div>
           </div>
